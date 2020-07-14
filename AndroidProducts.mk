@@ -17,9 +17,12 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/rk3399_mid/rk3399_mid.mk \
     $(LOCAL_DIR)/rk3399_Android10/rk3399_Android10.mk \
+    $(LOCAL_DIR)/RockPi4B/RockPi4B.mk \
 
 COMMON_LUNCH_CHOICES := \
 	rk3399_mid-userdebug \
 	rk3399_mid-user \
 	rk3399_Android10-userdebug \
-        rk3399_Android10-user \
+    rk3399_Android10-user \
+    RockPi4B-userdebug \
+    RockPi4B-user
