@@ -40,7 +40,9 @@ PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_PACKAGES += \
-    SoundRecorder
+    SoundRecorder \
+    WifiDisplay \
+    Rk4kVideoPlayer
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/apns-full-conf.xml:system/etc/apns-conf.xml
