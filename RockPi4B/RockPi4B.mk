@@ -50,3 +50,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.ota.host = www.rockchip.com:2300 \
     ro.sf.lcd_density=280 \
     vendor.hwc.device.primary=HDMI-A
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.product.property_source_order=product_services \
+    ro.product.product_services.brand=rockchip \
+    ro.product.product_services.device=rk3399_Android10 \
+    ro.product.product_services.manufacturer=rockchip \
+    ro.product.product_services.model=rk3399-Android10 \
+    ro.product.product_services.name=rk3399_Android10
