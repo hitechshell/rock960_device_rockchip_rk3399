@@ -60,3 +60,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.product.product_services.manufacturer=rockchip \
     ro.product.product_services.model=rk3399-Android10 \
     ro.product.product_services.name=rk3399_Android10
+
+# for fstab
+PRODUCT_COPY_FILES += \
+    device/rockchip/rk3399/fstab.rk30board.emmc:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_RAMDISK)/fstab.rk30board \
+    device/rockchip/rk3399/fstab.rk30board.emmc:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board \
+    device/rockchip/rk3399/fstab.rk30board.emmc:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.emmc \
+    device/rockchip/rk3399/fstab.rk30board.nvme:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.nvme \
+    device/rockchip/rk3399/fstab.rk30board.sd:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.sd
