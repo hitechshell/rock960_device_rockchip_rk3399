@@ -18,7 +18,7 @@
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_FSTAB_TEMPLATE := $(LOCAL_PATH)/fstab.in
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
-PRODUCT_BOOT_DEVICE := fe320000.dwmmc,fe330000.sdhci
+PRODUCT_BOOT_DEVICE := fe320000.dwmmc,fe330000.sdhci,f8000000.pcie,fe900000.dwc3
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3399/RockPi4B/BoardConfig.mk
@@ -67,4 +67,5 @@ PRODUCT_COPY_FILES += \
     device/rockchip/rk3399/fstab.rk30board.emmc:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board \
     device/rockchip/rk3399/fstab.rk30board.emmc:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.emmc \
     device/rockchip/rk3399/fstab.rk30board.nvme:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.nvme \
+    device/rockchip/rk3399/fstab.rk30board.usb:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.usb \
     device/rockchip/rk3399/fstab.rk30board.sd:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rk30board.sd
