@@ -61,6 +61,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.product.product_services.model=rk3399-Android10 \
     ro.product.product_services.name=rk3399_Android10
 
+PRODUCT_PACKAGE_OVERLAYS += device/rockchip/rk3399/RockPi4B/overlay
+
 # for fstab
 PRODUCT_COPY_FILES += \
     device/rockchip/rk3399/fstab.rk30board.emmc:$(PRODUCT_OUT)/$(TARGET_COPY_OUT_RAMDISK)/fstab.rk30board \
