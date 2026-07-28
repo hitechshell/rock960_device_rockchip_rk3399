@@ -9,7 +9,9 @@ CAMERA_SUPPORT_AUTOFOCUS:= false
 
 BOARD_CAMERA_SUPPORT := true
 BOARD_CAMERA_SUPPORT_EXT := true
-PRODUCT_KERNEL_DTS := rk3399-evb-ind-lpddr4-android-avb
+PRODUCT_KERNEL_DTS := rk3399-rock960-ab
+PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-11.config
+PRODUCT_KERNEL_VERSION := 5.10
 
 # AB image definition
 BOARD_USES_AB_IMAGE := false
