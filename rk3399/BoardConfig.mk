@@ -13,6 +13,8 @@ PRODUCT_KERNEL_DTS := rk3399-rock960-ab
 PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-11.config
 PRODUCT_KERNEL_VERSION := 5.10
 
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+
 # AB image definition
 BOARD_USES_AB_IMAGE := false
 BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
@@ -22,3 +24,8 @@ ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
     TARGET_RECOVERY_FSTAB := device/rockchip/rk3399/rk3399/recovery.fstab_AB
 endif
+
+BOARD_KERNEL_BASE := 0x20000000
+BOARD_MKBOOTIMG_ARGS := --header_version 2 --ramdisk_offset 0x04008000 --dtb_offset 0x08008000
+BOARD_RECOVERY_MKBOOTIMG_ARGS := --header_version 2 --ramdisk_offset 0x04008000 --dtb_offset 0x08008000
+BOARD_BOOT_HEADER_VERSION := 2
