@@ -47,3 +47,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.version = 1.0.0 \
     ro.product.ota.host = 192.168.1.1:8888 \
     ro.sf.lcd_density=560
+
+PRODUCT_HAVE_OPTEE := false
